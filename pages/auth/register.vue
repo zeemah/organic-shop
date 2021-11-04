@@ -41,7 +41,7 @@
             </div>
             <div class="pt-5 text-center text-gray-400 text-xs">
               <span>
-                Copyright © 2021-2022
+                Copyright Ⓒ {{ year }}
                 <!-- <a href="https://codepen.io/uidesignhub" rel="" target="_blank" title="Ajimon" class="text-green hover:text-green-500 ">AJI</a> -->
                 </span>
             </div>
@@ -49,3 +49,13 @@
       </div>
   </div>
 </template>
+
+<script>
+  export default {
+   data(){
+      return {
+          year: new Date().getFullYear()
+      }
+    }
+  }
+</script>
