@@ -1,54 +1,45 @@
 <template>
-  <div class="min-h-screen sm:flex sm:flex-row  mx-0 justify-center bg-gray-900">
-      <div class="flex justify-center self-center  z-10">
-        <div class="p-12 bg-white mx-auto rounded-2xl w-100 mt-24">
-            <div class="mb-4">
-              <h3 class="font-semibold text-2xl text-gray-800">Sign up </h3>
-            </div>
-            <div class="space-y-5">
-                 <div class="space-y-2">
-                              <label class="text-sm font-medium text-gray-700 tracking-wide">Name*</label>
-              <input class=" w-full text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-yellow--400" type="text" placeholder="John Doe">
-              </div>
-                        <div class="space-y-2">
-                              <label class="text-sm font-medium text-gray-700 tracking-wide">Email*</label>
-              <input class=" w-full text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-yellow--400" type="text" placeholder="user@mail.com">
-              </div>
-                          <div class="space-y-2">
-              <label class="mb-5 text-sm font-medium text-gray-700 tracking-wide">
-                Password*
-              </label>
-              <input class="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-yellow-400" type="password" placeholder="Enter your password">
-            </div>
-              <div class="flex items-center justify-between">
-              <div class="flex items-center">
-                <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded">
-                <label for="remember_me" class="ml-2 block text-sm text-gray-800">
-                  Remember me
-                </label>
-              </div>
-              <div class="text-sm">
-                <NuxtLink to="/auth/login" class="text-yellow-400 hover:text-yellow-500">
-                 Back to Login
-                </NuxtLink>
-              </div>
-            </div>
-            <div>
-              <button type="submit" class="w-full flex justify-center bg-yellow-500  hover:bg-yellow-400 text-gray-100 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
-                Sign Up
-              </button>
-            </div>
-            </div>
-            <div class="pt-5 text-center text-gray-400 text-xs">
-              <span>
-                Copyright Ⓒ {{ year }}
-                <!-- <a href="https://codepen.io/uidesignhub" rel="" target="_blank" title="Ajimon" class="text-green hover:text-green-500 ">AJI</a> -->
-                </span>
-            </div>
+   <div class="font-sans min-h-screen antialiased bg-gray-900 pt-24 pb-5">
+    <div class="flex flex-col justify-center sm:w-96 sm:m-auto mx-5 mb-5 space-y-8">
+      <!-- <h1 class="font-bold text-center text-4xl text-yellow-500">Your<span class="text-blue-500">App</span></h1> -->
+      <img src="~/assets/img/organic.png" width="200" class="justify-center lg:pt-60 lg:ml-24"/>
+      <form action="#">
+        <div class="flex flex-col bg-white p-10 rounded-lg shadow space-y-6">
+          <h1 class="font-bold text-xl text-center">Create your account</h1>
+          
+          <div class="flex flex-col space-y-1">
+             <label class=" text-sm font-medium text-gray-700 tracking-wide">
+              Name*
+            </label>
+            <input type="text" name="name" id="name" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Jane Doe" />
+          </div>
+
+          <div class="flex flex-col space-y-1">
+             <label class=" text-sm font-medium text-gray-700 tracking-wide">
+              Email*
+            </label>
+            <input type="text" name="username" id="username" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Jane@mail.com" />
+          </div>
+
+          <div class="flex flex-col space-y-1">
+            <label class="text-sm font-medium text-gray-700 tracking-wide">
+             Password*
+            </label>
+            <input type="password" name="password" id="password" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Password" />
+          </div> 
+          <div class="flex flex-col-reverse sm:flex-row sm:justify-between items-center">
+            <NuxtLink to="/auth/login" class="inline-block text-yellow-500 hover:text-yellow-800">Back to Login</NuxtLink>
+            <button type="submit" class="bg-yellow-500 text-white font-bold px-5 py-2 rounded focus:outline-none shadow hover:bg-yellow-600 transition-colors">Create account</button>
+          </div>
         </div>
+      </form>
+      <div class="flex justify-center text-gray-500 text-sm">
+        <p>&copy;{{ year }}. All right reserved.</p>
       </div>
+    </div>
   </div>
 </template>
+
 
 <script>
   export default {
