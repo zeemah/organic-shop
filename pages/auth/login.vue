@@ -11,20 +11,20 @@
              <label class=" text-sm font-medium text-gray-700 tracking-wide">
               Email*
             </label>
-            <input type="text" name="username" id="username" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Username@mail.com" />
+            <input type="text" name="username" id="username" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Username@mail.com" required/>
           </div>
 
           <div class="flex flex-col space-y-1">
             <label class="text-sm font-medium text-gray-700 tracking-wide">
              Password*
             </label>
-            <input type="password" name="password" id="password" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Password" />
+            <input type="password" name="password" id="password" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Password" required />
           </div>
         
           <div class="relative">
             <input type="checkbox" name="remember" id="remember" checked class="inline-block align-middle" />
             <label class="inline-block align-middle" for="remember">Remember me</label>
-             <NuxtLink to="/auth/register" class="inline-block text-yellow-500 hover:text-yellow-800 justify-end">Create an account</NuxtLink>
+             <NuxtLink to="/auth/register" class="inline-block text-yellow-500 hover:text-yellow-800 lg:ml-12">Create an account</NuxtLink>
           </div>
          
 

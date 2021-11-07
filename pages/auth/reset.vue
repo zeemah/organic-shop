@@ -10,7 +10,7 @@
              <label class=" text-sm font-medium text-gray-700 tracking-wide">
               Email*
             </label>
-            <input type="text" name="username" id="username" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Username@mail.com" />
+            <input type="text" name="username" id="username" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Username@mail.com" required/>
           </div>
           <div class="flex flex-col-reverse sm:flex-row sm:justify-between items-center">
             <NuxtLink to="/auth/login" class="inline-block text-yellow-500 hover:text-yellow-800">Back to Login</NuxtLink>
