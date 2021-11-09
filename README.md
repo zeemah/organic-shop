@@ -1,4 +1,4 @@
-# Techy Shop
+# Organic Shop
 
 ## Build Setup
 
