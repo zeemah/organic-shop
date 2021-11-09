@@ -11,7 +11,7 @@
              <label class=" text-sm font-medium text-gray-700 tracking-wide">
               Name*
             </label>
-            <input type="text" name="name" id="name" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Jane Doe" required/>
+            <input type="text" name="name" id="name" class="border-2 rounded px-3 py-2 w-full focus:outline-none focus:border-yellow-400 focus:shadow" placeholder="Jane Doe" required />
           </div>
 
           <div class="flex flex-col space-y-1">
@@ -45,7 +45,8 @@
   export default {
    data(){
       return {
-          year: new Date().getFullYear()
+          year: new Date().getFullYear(),
+          
       }
     }
   }
